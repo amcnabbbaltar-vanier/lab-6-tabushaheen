@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
             audioSource.Play();
             if (GameManager.Instance != null)
             {
-                GameManager.Instance.AddScore(1); // Add 1 point per hit
+                GameManager.Instance.IncrementScore(1); // Add 1 point per hit
             }
 
 

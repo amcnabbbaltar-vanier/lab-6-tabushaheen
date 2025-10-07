@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.IncrementScore();
+            GameManager.Instance.IncrementScore(1);
             GameManager.Instance.LoadNextScene();
         }
     }

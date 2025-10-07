@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     private int score = 0;
     public int targetScore = 4; // Score to reach before changing scenes
+    public TextMeshProUGUI scoreText;
+
 
     void Awake()
     {
@@ -21,7 +25,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddScore(int amount)
+    public void IncrementScore(int amount)
     {
         score += amount;
         UpdateUI();
